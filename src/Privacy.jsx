@@ -1,10 +1,12 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Privacy() {
   return (
     <>
       <nav className="navbar">
-        <div id="priv" className="title"><a href="/home">Come back home</a></div>
+        <div id="priv" className="title"><Link to="/">Come back home</Link></div>
       </nav>
 
       <div className="layout">
@@ -18,3 +20,4 @@ export default function Privacy() {
     </>
   );
 }
+
