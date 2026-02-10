@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState(false);
@@ -27,7 +28,7 @@ export default function Home() {
     const file = e.target.files[0];
     if (!file) return;
 
-    // ✅ CHECK DURATION BEFORE UPLOAD
+
     const video = document.createElement("video");
     video.preload = "metadata";
     video.src = URL.createObjectURL(file);
@@ -145,7 +146,7 @@ export default function Home() {
         <div className="modal" onClick={() => setShowMenu(false)}>
           <div className="modalContent" onClick={(e) => e.stopPropagation()}>
             <h1>What about it?</h1>
-            <h1 id="priv"><a href="/Privacy">Our Privacy Policy</a></h1>
+            <h1 id="priv"><Link to="/privacy">Our Privacy Policy</Link></h1>
             <span />
             <a
               id="patreon"
@@ -189,4 +190,5 @@ export default function Home() {
     </>
   );
 }
+
 
