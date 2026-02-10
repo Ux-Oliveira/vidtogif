@@ -145,7 +145,7 @@ export default function Home() {
         <div className="modal" onClick={() => setShowMenu(false)}>
           <div className="modalContent" onClick={(e) => e.stopPropagation()}>
             <h1>What about it?</h1>
-            <h1 id="priv"><a href="/privacy">Our Privacy Policy</a></h1>
+            <h1 id="priv"><a href="/Privacy">Our Privacy Policy</a></h1>
             <span />
             <a
               id="patreon"
@@ -189,3 +189,4 @@ export default function Home() {
     </>
   );
 }
+
