@@ -94,7 +94,7 @@ export default function Home() {
               </h1>
               <p>
                 This will convert your videos into a 10 seconds gif you can post there!
-                Videos cannot be longer than 3 minutes!
+                *videos cannot be longer than 3 minutes*
               </p>
             </div>
 
@@ -136,7 +136,7 @@ export default function Home() {
           </h1>
           <p id="quick">
             This will convert your videos into a 10 seconds gif you can post there!
-            Videos cannot be longer than 3 minutes!
+            *videos cannot be longer than 3 minutes*
           </p>
         </div>
       </div>
@@ -181,7 +181,7 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             <h2>
-              The video is too long. We only accept videos up to 3 minutes long.
+              Sorry, the video is too long. We only accept videos up to 3 minutes long.
             </h2>
             <button onClick={() => setShowTooLong(false)}>OK</button>
           </div>
