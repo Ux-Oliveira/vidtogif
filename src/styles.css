@@ -26,6 +26,7 @@ h1, h2, .title {
 
 /* NAVBAR */
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 18px;
@@ -101,17 +102,6 @@ h1, h2, .title {
   justify-content: center;
   text-align: center;
 }
-
-.uploadBtn {
-  margin-top: 20px;
-  padding: 18px;
-  background: var(--c2);
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
-
 
 .textSide {
   max-width: 800px;
@@ -211,17 +201,36 @@ h1, h2, .title {
 }
 
 @media (max-width: 768px) {
+
+  .navbar {
+    width: 100%;
+  }
+
   .layout {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    gap: 30px;
+    gap: 24px;
+    text-align: center;
   }
 
   .quadrant {
-    width: 100%;
-    max-width: 360px;
-    min-height: 520px;
+    width: 92%;
+    max-width: 340px;
+    min-height: 380px;
+    padding: 22px;
     margin: 0 auto;
+  }
+
+  .quadrantContent {
+    text-align: center;
+  }
+
+  .uploadBtn {
+    margin-top: 20px;   /* normal spacing */
+    padding: 14px;
+    font-size: 16px;
   }
 
   .textSide {
@@ -231,42 +240,13 @@ h1, h2, .title {
   .mobileText {
     display: block;
     text-align: center;
-    margin-bottom: 20px;
   }
 
   .mobileText h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .mobileText p {
-    font-size: 1.3rem;
-  }
-}
-
-
-
-/*MOBILE CONSIDERATION*/
-
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-    padding: 20px;
-    gap: 30px;
-  }
-
-  .quadrant {
-    width: 100%;
-    max-width: 360px;
-    min-height: 460px;
-    margin: 0 auto;
-  }
-
-  .textSide {
-    display: none; /* hide side text */
-  }
-
-  .quadText {
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
   }
 }
